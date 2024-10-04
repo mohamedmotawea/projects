@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- botstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- font_awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="layout/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="">
+    <!-- spinner start -->
+    <div id="spinner_wrapper" class="col-12">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- spinner end -->
+
+    <!-- header start -->
+    <header class="bg- col-12">
+      <div class="container col-12">
+        <nav class="navbar navbar-expand-lg row col-lg-12">
+          <div class="container-fluid col-lg-12 d-flex justify-content-between">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a
+              class="navbar-brand col-3 col-md-1 text-uppercase fw-bold mx-3"
+              href="index.html"
+              ><h3>SHOP.CO</h3></a
+            >
+           
+            
+            <div
+              class="collapse navbar-collapse col-lg-6"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-12">
+                <li class="nav-item dropdown mx-lg-2">
+                  <a
+                    class="nav-link dropdown-toggle mx-2 color-000000"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="cart.html">My cart</a></li>
+                    <li>
+                      <a class="dropdown-item" href="Category Page.html">Category</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Product Detail Page.html">Product Detail</a>
+                    </li>
+                    <li class="dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 color-000000 " href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active mx-2" aria-current="page" href="#"
+                    >On sale</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active mx-2" aria-current="page" href="new-avrrials.html"
+                    >New Arrivals</a
+                  >
+                </li>
+                <li class="nav-item col-lg-6">
+                  <form
+                    class="d-flex border w-100 rounded-pill overflow-hidden mx-2"
+                    role="search"
+                  >
+                    <button class="border-0" type="submit">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input
+                      class="form-control border-0 bg-color-F2F0F1"
+                      style="border-radius: 0%"
+                      type="search"
+                      placeholder="Search"
+                    />
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <ul class="navbar-nav   d-flex flex-row justify-content-end float-end color-000000">
+              <li class="mx-2">
+                <a class="nav-link color-000000" href="cart.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a class="nav-link color-000000" href="" class=""
+                  ><i class="fa-regular fa-user border border-dark rounded-circle p-1"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- links start -->
+    <div class="container">
+      <hr />
+      <div class="d-flex text-decoration-none text-body-secondary col-12 p-3">
+        <a class="text-decoration-none text-body-secondary" href="index.html"
+          >Home ></a
+        >
+        <a class="text-decoration-none text-body-secondary" href="">Cart ></a>
+      </div>
+    </div>
+    <!-- links end -->
+
+<!--your cart  -->
+<div class="container">
+    <div class="row  ">
+
+    <span class="col-12 fw-bold text-uppercase"> 
+        <h3 style="font-size: 30px !important; " class="color-000000" >your cart</h3>
+    </span>
+    <!-- product in cart -->
+     <div class="col-lg-7 col-md-7 col-12 border rounded " style=" border-radius: 20px !important;">
+        <!-- card start-->
+         <div class=" p-lg-3 p-md-3 d-flex col-12 justify-content-between my-3 border-bottom align-items-center " style="height: 150px;">
+            <div class=" col-3 "><img style="width: 100%; height: auto; border-radius: 15px; max-width: 120px; min-width: 100px;" src="assets/imges/products/image 7 (1).png" alt=""></div>
+            <div class=" col-9 mx-1">
+            <div class=" col-12 d-flex justify-content-between">
+            <span class="col-8 d-flex flex-column justify-content-center p-2" style="height: 120px;"> 
+                <h5  class="color-000000 " style="font-size: 13px;">Gradient Graphic T-shirt</h5>
+                <h6  class="color-000000">size: <span class="text-body-secondary">Large</span></h6>
+                <h6  class="color-000000">color: <span class="text-body-secondary">white</span></h6>
+                <h3 class="color-000000">$145</h3> 
+            </span>
+            <span class="col-4    d-flex flex-column justify-content-between align-items-end"  style="height: 120px;" >
+                <!-- delate btn -->
+                 <button class="  w-25 border-0 bg-white" >
+                    <img src="assets/imges/icon/RECYCLE.png" alt="">
+                 </button>
+                 <span class=" float-end  p-0  d-flex align-items-center justify-content-around  bg-color-F2F0F1 border rounded-pill">
+                    <button class="btn fs-4" onclick="minus()"><img src="assets/imges/icon/minus.png" alt=""></button>
+                    <span class="fs-5 " id="show-count">1</span>
+                    <button class="btn fs-4" onclick="plus()"><img src="assets/imges/icon/plus.png" alt=""></button>
+                    <script>
+                      let count = 1;
+                  function plus (){
+                    count ++;
+                    console.log(count)
+                    document.getElementById('show-count').innerHTML=`${count}`;
+                  
+                  }
+                  function minus (){
+                    count--;
+                    if(count <=0){
+                      count=1
+                    }
+                    console.log(count)
+                  document.getElementById('show-count').innerHTML=`${count}`;
+                  };
+                        
+                      </script>
+                  </span>
+            </span>
+
+
+            </div>
+
+            </div>
+         </div>
+        <!-- card end-->
+         
+         
+
+        
+         
+
+     </div>
+      <!-- product in cart end-->
+     <!-- total price -->
+      <div class="col-lg-5 col-md-5 col-12  my-3 my-lg-0 my-sm-0">
+      <div class="mx-1 border p-3  "  style="border-radius: 20px !important;width: 100%; height: 95%;">
+        <h3 class="fw-bold color-000000">Order Summary</h3>
+        <div class="col-12 border-bottom text-body-secondary">
+            <span class="d-flex justify-content-between my-3 text-body-secondary">
+                <h5 >Subtotal</h5>
+                <h5 class="color-000000"><span>$</span>565</h5>
+        </span>
+            <span class="d-flex justify-content-between my-3">
+                <h5>Discunt (-20%)</h5>
+                <h5 style="color: #FF3333;"><span>-$</span>113</h5>
+            </span>
+            <span class="d-flex justify-content-between my-3">
+                <h5>Delivery Fees</h5>
+            <h5 class="color-000000"><span>$</span>15</h5>
+        </span>
+        </div>
+        <span class="d-flex justify-content-between my-3">
+            <h5 class="color-000000">Total</h5>
+            <h4 class="color-000000"> <span>$</span>467</h4>
+        </span>
+        <div class="row my-3">
+            <form action="" class="mx-auto row justify-content-between">
+                <input style="width: 73%;" class="bg-color-F2F0F1 p-3 rounded-pill col-8 border-0" type="text" placeholder="Add promo code">
+                 <button style="width: 25%;" class=" bg-color-000000 p-3 rounded-pill text-light border-0">Apply</button>   
+                 <a href="" class="btn col-12 bg-color-000000 p-3 mt-4 rounded-pill text-light border-0 btn-dark">Go to checkout --></a>
+            </form>
+        </div>
+      </div>
+    </div>
+    <!-- total price end-->
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- footer start -->
+     <footer class="mt-5 my-lg-0 mt-md-0 ">
+        <div
+          class="mt-5 pb-2 bg-color-F2F0F1"
+          style="margin-top: 150px !important"
+        >
+          <div
+            class="container mb-5 col-12 position-relative"
+            style="padding-top: 1px"
+          >
+            <!-- date about -->
+            <div
+              class="position-absolute bg-color-000000 text-light row col-12 p-3 text-uppercase fw-bold"
+              style="border-radius: 25px; top: -100px"
+            >
+              <span
+                class="col-lg-6 col-md-6 col-12 text-uppercase fw-bold fs-1 mt-2 text-sm-center"
+                ><h1>stay upto date about our latest offers</h1></span
+              >
+              <span class="col-lg-6 col-md-6 col-12">
+                <form class="p-2" action="" method="get">
+                  <input
+                    class="w-100 rounded-pill p-2"
+                    type="email"
+                    placeholder="  enter your Email address"
+                  />
+                  <button class="w-100 rounded-pill p-2 mt-3 fw-bold">
+                    Subscribe To News Letter
+                  </button>
+                </form>
+              </span>
+            </div>
+            <div
+              class="d-flex row col-12 p-2 pt-5 color-000000"
+              style="margin-top: 50px"
+            >
+              <!-- /////////////// -->
+              <ul
+                class="col-lg-3 col-md-3 col-12 list-unstyled mt-lg-0 mt-md-0 mt-5"
+              >
+                <li class="mb-3 text-uppercase fw-bold"><h1>shop.co</h1></li>
+                <li class="mb-3">
+                  <p>
+                    we have clothes and suits your style and wihch you're proud to
+                    wear. Form women to men.
+                  </p>
+                </li>
+                <li class="mb-3">
+                  <a href=""
+                    ><img src="assets/imges/icon/facebook_icon.png" alt=""
+                  /></a>
+                  <a class="mx-1" href=""
+                    ><img src="assets/imges/icon/instgram_icon.png" alt=""
+                  /></a>
+                  <a class="mx-1" href=""
+                    ><img src="assets/imges/icon/tweeter_icon.png" alt=""
+                  /></a>
+                  <a class="" href=""
+                    ><img src="assets/imges/icon/git_hub_icon.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <!-- ////// -->
+              <ul class="col-lg-2 col-md-2 col-6 list-unstyled mt-lg-1 mt-md-1">
+                <li class="mb-3 text-uppercase fw-bold"><h5>Company</h5></li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >About</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Features</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Works</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >career</a
+                  >
+                </li>
+              </ul>
+              <!-- //////// -->
+              <ul class="col-lg-2 col-md-2 col-6 list-unstyled mt-lg-1 mt-md-1">
+                <li class="mb-3 text-uppercase fw-bold"><h5>HELP</h5></li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Customer Support</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Delivery Details
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+              <!-- FAQ -->
+              <ul class="col-lg-2 col-md-2 col-6 list-unstyled mt-lg-1 mt-md-1">
+                <li class="mb-3 text-uppercase fw-bold"><h5>FAQ</h5></li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Account</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href="">
+                    Manage Deliveries</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Orders</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Payments</a
+                  >
+                </li>
+              </ul>
+  
+              <!-- Resources -->
+              <ul class="col-lg-2 col-md-2 col-5 list-unstyled mt-lg-1 mt-md-1">
+                <li class="mb-3 text-uppercase fw-bold"><h5>Resources</h5></li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Free eBooks</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Development Tutorial</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >How to - Blog</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a class="text-body-secondary text-decoration-none" href=""
+                    >Youtube Playlist</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <hr />
+            <div class="d-flex row justify-content-between">
+              <span
+                class="col-lg-6 col-md-6 col-12 text-lg-start text-md-start text-center my-3"
+                >Shop.co © 2000-2023, All Rights Reserved</span
+              >
+              <span
+                class="col-lg-6 col-md-6 col-12 text-lg-end text-md-end text-center my-3"
+              >
+                <img src="assets/imges/logo/Badge (1).png" alt="" />
+                <img src="assets/imges/logo/Badge (2).png" alt="" />
+                <img src="assets/imges/logo/Badge (3).png" alt="" />
+                <img src="assets/imges/logo/Badge (4).png" alt="" />
+                <img src="assets/imges/logo/Badge (5).png" alt="" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+  
+      <!-- index.js link -->
+  
+      <script src="assets/js/index.js"></script>
+      <!-- bootstrap link js -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+  

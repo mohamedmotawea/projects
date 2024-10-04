@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+
+    
+}
+body{
+}
+.bg-color-F2F0F1{
+   background-color:#F2F0F1;
+}
+.bg-color-000000{
+    background-color: #000000;
+}
+.color-000000{
+    color: #000000;
+}
+.star_rate_color{
+    
+    color:gold;
+}
+#spinner_wrapper{
+    background-color:#000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    overflow: hidden;
+    
+}
+.spinner-border{
+    height: 60px;
+    width: 60px;
+    color: #F2F0F1;
+}
+.card_product:hover img{
+
+transform: translate(1.5);
+transform: scale(1.05);
+transition: all 0.5s;
+background-color: #F2F0F1;
+}
+.card_product:hover {
+
+    transform: translate(1.5);
+    box-shadow: 1px 1px 1px 1px  #b4b3b4;
+    transition: all 0.5s;
+    
+    
+    }
+    
+.accordion-button{
+    border: none !important;
+    
+}
+ .accordion-button:focus{
+    box-shadow:1px 1px 1px 1px white;
+    background-color:white;
+    border: none;
+    /* flex-direction: column; */
+} 
+.accent {
+    accent-color: #000000;
+
+}
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl{
+    --bs-offcanvas-height:95vh;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    /* border: rgba(0, 0, 0, 0); */
+    
+}
+.ani-scrool{
+    animation: scroll 10s  infinite  linear ;
+    scrollbar-width: calc(20px ,20px);
+}
+
+  @keyframes scroll {
+    0%{
+        transform: translateX();
+        scroll-snap-type: mandatory;
+    }
+    100%{
+        transform: translateX(calc(-250px *2));
+        scroll-snap-type: mandatory;
+
+
+    }
+  }
+
+
+
+.viewall {
+    
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    
+    scrollbar-width: auto;
+}
