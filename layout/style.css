@@ -4,15 +4,17 @@
     
 }
 body{
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .bg-color-F2F0F1{
-   background-color:#F2F0F1;
+   background-color:#F2F0F1 !important;
 }
 .bg-color-000000{
-    background-color: #000000;
+    background-color: #000000 !important;
 }
 .color-000000{
-    color: #000000;
+    color: #000000 !important;
 }
 .star_rate_color{
     
@@ -25,7 +27,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999;
+    z-index: 99999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,9 +78,9 @@ background-color: #F2F0F1;
     
 }
 .ani-scrool{
-    animation: scroll 10s  infinite  linear ;
-    scrollbar-width: calc(20px ,20px);
-}
+    /* animation: scroll 10s  infinite  linear ;
+    scrollbar-width: calc(20px ,20px); */
+} 
 
   @keyframes scroll {
     0%{
@@ -100,5 +102,13 @@ background-color: #F2F0F1;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
     
-    scrollbar-width: auto;
+}
+.lazy {
+    opacity: 0;
+    transition: opacity 1.5.s ease;
+    transition: all 1.5s;
+}
+
+img.lazy-loaded {
+   opacity: 1;
 }
