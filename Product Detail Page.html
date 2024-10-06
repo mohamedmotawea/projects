@@ -118,8 +118,8 @@
                     class="d-flex border w-100 rounded-pill overflow-hidden mx-2"
                     role="search"
                   >
-                    <button class="border-0" type="submit">
-                      <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="border-0 bg-color-F2F0F1" type="submit">
+                      <i class="fa-solid fa-magnifying-glass color-000000"></i>
                     </button>
                     <input
                       class="form-control border-0 bg-color-F2F0F1"
@@ -163,16 +163,18 @@
 
   </div>
   <!-- links end -->
+
+  <div class="d-flex flex-nowrap flex-column-reverse flex-lg-row justify-content-between col-lg-7">
 <!-- small img start -->
-  <div class="col-lg-2 col-md-11 justify-content-between d-flex d-lg-block  col-12">
-    <span class="mt-2 mx-2 "  ><img  onclick="showPreview(this)"  class="w-100 mt-2 lazy" data-src="assets/imges/singl_product/image 2.png" alt=""></span>
-    <span class="mt-2 mx-2 "  ><img  onclick="showPreview(this)"  class="w-100 mt-2 lazy" data-src="assets/imges/singl_product/image 5.png" alt=""></span>
-    <span class="mt-2 mx-2 "  ><img  onclick="showPreview(this)"  class="w-100 mt-2 lazy" data-src="assets/imges/singl_product/image 6.png" alt=""></span>
+  <div class="col-lg-3 col-md-11 justify-content-between d-flex d-lg-block  col-12">
+    <span class="mt-2 mx-2 w-100"  ><img  onclick="showPreview(this)"  class="w-100 mt-2 lazy" data-src="assets/imges/singl_product/image 2.png" alt=""></span>
+    <span class="mt-2 mx-2 w-100"  ><img  onclick="showPreview(this)"  class="w-100 mt-2 lazy" data-src="assets/imges/singl_product/image 5.png" alt=""></span>
+    <span class="mt-2 mx-2 w-100"  ><img  onclick="showPreview(this)"  class="w-100 mt-2 lazy" data-src="assets/imges/singl_product/image 6.png" alt=""></span>
 
   </div>
 <!-- small img end -->
 <!-- big img start -->
-  <div class="col-lg-5 col-md-11 col-12 mt-3">
+  <div class="col-lg-8 col-md-11 col-12 mt-3">
     <img class="w-100 lazy" data-src="assets/imges/singl_product/image 1.png" id="img_prv" alt="">
   </div>
   <script>
@@ -187,6 +189,8 @@
     }
 </script>
 <!-- big img end -->
+</div>
+
 <!-- product_data start -->
   <div class="col-lg-5 col-md-12 col-12 mt-3 p-2">
     
@@ -314,7 +318,7 @@ document.getElementById('show-count').innerHTML=`${count}`;
  <div class="col-12 ">
 
     <div class="btn-group">
-      <button type="button" class=" mx-2 border btn bg-color-F2F0F1 rounded-circle  " data-bs-toggle="dropdown" aria-expanded="false">
+      <button type="button" class=" mx-2 border btn bg-color-F2F0F1 rounded  " data-bs-toggle="dropdown" aria-expanded="false">
         <img src="assets/imges/icon/filter.png" alt="">
       </button>
       <ul class="dropdown-menu">
@@ -351,9 +355,9 @@ document.getElementById('show-count').innerHTML=`${count}`;
 
   <div class="container ">
     <!-- cards start -->
-    <div class="  mt-5 row justify-content-md-enter p-4">
+    <div class="  mt-5 row justify-content-evenly p-4">
         <!-- card start -->
-      <div class="p-1 col-lg-6 col-md-6 col-12 border p-4 my-2 " style="border-radius: 30px;">
+      <div class="p-1 col-lg-5 col-md-6 col-12 border p-4 my-2 " style="border-radius: 30px;">
         <span class="col-w-100 d-flex justify-content-between ">
            <!-- rate start -->
             <span class="star_rate_color ">
@@ -401,7 +405,7 @@ document.getElementById('show-count').innerHTML=`${count}`;
 
       </div>
       <!-- //////// -->
-      <div class="p-1 col-lg-6 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
+      <div class="p-1 col-lg-5 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
         <span class="col-12 d-flex justify-content-between ">
            <!-- rate start -->
             <span class="star_rate_color ">
@@ -455,7 +459,7 @@ document.getElementById('show-count').innerHTML=`${count}`;
 
       </div>
        <!-- //////// -->
-       <div class="p-1 col-lg-6 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
+       <div class="p-1 col-lg-5 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
         <span class="col-12 d-flex justify-content-between ">
            <!-- rate start -->
             <span class="star_rate_color ">
@@ -509,7 +513,7 @@ document.getElementById('show-count').innerHTML=`${count}`;
 
       </div>
        <!-- //////// -->
-       <div class="p-1 col-lg-6 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
+       <div class="p-1 col-lg-5 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
         <span class="col-12 d-flex justify-content-between ">
            <!-- rate start -->
             <span class="star_rate_color ">
@@ -563,7 +567,7 @@ document.getElementById('show-count').innerHTML=`${count}`;
 
       </div>
        <!-- //////// -->
-       <div class="p-1 col-lg-6 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
+       <div class="p-1 col-lg-5 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
         <span class="col-12 d-flex justify-content-between ">
            <!-- rate start -->
             <span class="star_rate_color ">
@@ -617,7 +621,7 @@ document.getElementById('show-count').innerHTML=`${count}`;
 
       </div>
        <!-- //////// -->
-       <div class="p-1 col-lg-6 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
+       <div class="p-1 col-lg-5 col-md-6 col-12 border p-4  my-2 " style="border-radius: 30px;">
         <span class="col-12 d-flex justify-content-between ">
            <!-- rate start -->
             <span class="star_rate_color ">

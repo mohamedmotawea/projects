@@ -76,28 +76,7 @@
                     <li>
                       <a class="dropdown-item" href="Product Detail Page.html">Product Detail</a>
                     </li>
-                    <li class="dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
+                   
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -118,7 +97,7 @@
                     class="d-flex border w-100 rounded-pill overflow-hidden mx-2"
                     role="search"
                   >
-                    <button class="border-0" type="submit">
+                    <button class="border-0 bg-color-F2F0F1" type="submit">
                       <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                     <input
@@ -168,27 +147,74 @@
         <h3 style="font-size: 30px !important; " class="color-000000" >your cart</h3>
     </span>
     <!-- product in cart -->
-     <div class="col-lg-7 col-md-7 col-11 mx-auto border rounded  " style=" border-radius: 20px !important;">
+     <div class="col-lg-7 col-md-7 col-11 mx-auto border rounded px-1 p-lg-2 p-md-2  " style=" border-radius: 20px !important; padding-right: 20px !important;">
         <!-- card start-->
-         <div class=" p-lg-3 p-md-3 p-1  d-flex col-12 justify-content-between my-3 border-bottom align-items-center " style="height: 150px;">
-            <div class="col-lg-3 col-2"><img style="width: 100%; height: auto; border-radius: 15px; max-height: 120px; min-height: 110px; max-width: 130px; min-width: 85px;" src="assets/imges/products/image 7 (1).png" alt=""></div>
+         <div class=" p-lg-3 p-md-3 p-0  d-flex col-12 justify-content-between my-3 border-bottom align-items-center " style="height: 150px;padding-left:;">
+            <div class="col-lg-3 col-2"><img style="width:100%; height: auto; border-radius: 15px; max-height: 130px; min-height: 100px; max-width: 130px; min-width: 85px;" src="assets/imges/products/image 7 (1).png" alt=""></div>
             <div class=" col-9 mx-1">
-            <div class=" col-12 d-flex justify-content-between" style="overflow-x: visible;">
-            <span class="col-8 d-flex flex-column justify-content-center p-2 mx-2" style="max-height: 120px; min-height: 100px; "> 
-                <h5  class="color-000000 fs-6  text-nowrap" style="font-size: ;  ">Gradient Graphic T-shirt</h5>
-                <h6  class="color-000000" style="">size: <span class="text-body-secondary">Large</span></h6>
-                <h6  class="color-000000" style="">color: <span class="text-body-secondary">white</span></h6>
-                <h3 class="color-000000" style=""> $145</h3> 
+            <div class=" col-12 d-flex justify-content-lg-between " style="overflow-x: visible;">
+            <span class="col-8 d-flex flex-column justify-content-center px-2 justify-content-md-between " style="max-height: 120px; min-height: 90px; margin-left: 25px;"> 
+                <h5  class="color-000000   text-wrap" style="font-size: 90% !important;  ">Gradient Graphic T-shirt</h5>
+                <h6  class="color-000000 " style="font-size: 80% !important;">size: <span class="text-body-secondary">Large</span></h6>
+                <h6  class="color-000000 " style="font-size: 80% !important;">color: <span class="text-body-secondary">white</span></h6>
+                <h3 class="color-000000  fs-lg-2 fs-md-2  fs-5" > $145</h3> 
             </span>
             <span class="col-4    d-flex flex-column justify-content-between align-items-end"  style="height: 120px;" >
                 <!-- delate btn -->
                  <button class="  w-25 border-0 bg-white" style="margin-right: 20px;" >
                     <img src="assets/imges/icon/RECYCLE.png" alt="">
                  </button>
-                 <span class=" float-end  p-0  d-flex align-items-center justify-content-around  bg-color-F2F0F1 border rounded-pill" style="margin-right: 20px;">
-                    <button class="btn fs-4" onclick="minus()"><img src="assets/imges/icon/minus.png" alt=""></button>
-                    <span class="fs-5 " id="show-count">1</span>
-                    <button class="btn fs-4" onclick="plus()"><img src="assets/imges/icon/plus.png" alt=""></button>
+                 <span class=" float-end   p-lg-2 p-md-2 p-0  d-flex align-items-center justify-content-around  bg-color-F2F0F1 border rounded-pill" style="margin-right:5px;">
+                    <button class="border-0  fs-6 fs-lg-5 fs-md-5 rounded-pill" onclick="minus()"><img src="assets/imges/icon/minus.png" alt=""></button>
+                    <span class="fs-6 fs-lg-4 fs-md-4 " id="show-count">1</span>
+                    <button class=" border-0 fs-6 fs-lg-5 fs-md-5 rounded-pill" onclick="plus()"><img  src="assets/imges/icon/plus.png" alt=""></button>
+                    <script>
+                      let count = 1;
+                  function plus (){
+                    count ++;
+                    console.log(count)
+                    document.getElementById('show-count').innerHTML=`${count}`;
+                  
+                  }
+                  function minus (){
+                    count--;
+                    if(count <=0){
+                      count=1
+                    }
+                    console.log(count)
+                  document.getElementById('show-count').innerHTML=`${count}`;
+                  };
+                        
+                      </script>
+                  </span>
+            </span>
+
+
+            </div>
+
+            </div>
+         </div>
+        <!-- card end-->
+          <!-- card start-->
+          <div class=" p-lg-3 p-md-3 p-0  d-flex col-12 justify-content-between my-3 border-bottom align-items-center " style="height: 150px;padding-left:;">
+            <div class="col-lg-3 col-2"><img style="width:100%; height: auto; border-radius: 15px; max-height: 130px; min-height: 100px; max-width: 130px; min-width: 85px;" src="assets/imges/products/image 8.png" alt=""></div>
+            <div class=" col-9 mx-1">
+            <div class=" col-12 d-flex justify-content-lg-between " style="overflow-x: visible;">
+            <span class="col-8 d-flex flex-column justify-content-center px-2 justify-content-md-between " style="max-height: 120px; min-height: 90px; margin-left: 25px;"> 
+                <h5  class="color-000000   text-wrap" style="font-size: 90% !important;  ">Gradient Graphic T-shirt</h5>
+                <h6  class="color-000000 " style="font-size: 80% !important;">size: <span class="text-body-secondary">Large</span></h6>
+                <h6  class="color-000000 " style="font-size: 80% !important;">color: <span class="text-body-secondary">white</span></h6>
+                <h3 class="color-000000  fs-lg-2 fs-md-2  fs-5" > $145</h3> 
+            </span>
+            <span class="col-4    d-flex flex-column justify-content-between align-items-end"  style="height: 120px;" >
+                <!-- delate btn -->
+                 <button class="  w-25 border-0 bg-white" style="margin-right: 20px;" >
+                    <img src="assets/imges/icon/RECYCLE.png" alt="">
+                 </button>
+                 <span class=" float-end   p-lg-2 p-md-2 p-0  d-flex align-items-center justify-content-around  bg-color-F2F0F1 border rounded-pill" style="margin-right:5px;">
+                    <button class="border-0  fs-6 fs-lg-5 fs-md-5 rounded-pill" onclick="minus()"><img src="assets/imges/icon/minus.png" alt=""></button>
+                    <span class="fs-6 fs-lg-4 fs-md-4 " id="show-count">1</span>
+                    <button class=" border-0 fs-6 fs-lg-5 fs-md-5 rounded-pill" onclick="plus()"><img  src="assets/imges/icon/plus.png" alt=""></button>
                     <script>
                       let count = 1;
                   function plus (){
@@ -248,8 +274,8 @@
         </span>
         <div class="row my-3">
             <form action="" class="mx-auto row justify-content-between">
-                <input style="width: 73%;" class="bg-color-F2F0F1 p-3 rounded-pill col-8 border-0" type="text" placeholder="Add promo code">
-                 <button style="width: 25%;" class=" bg-color-000000 p-3 rounded-pill text-light border-0">Apply</button>   
+                <input style="width: 65%;" class="bg-color-F2F0F1 p-3 rounded-pill col-8 border-0" type="text" placeholder="Add promo code">
+                 <button style="width: 35%;"  class="  bg-color-000000 p-3 rounded-pill text-light border-0">Apply</button>   
                  <a href="" class="btn col-12 bg-color-000000 p-3 mt-4 rounded-pill text-light border-0 btn-dark">Go to checkout --></a>
             </form>
         </div>
