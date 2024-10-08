@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     img.src = img.getAttribute('data-src');
                     img.classList.add('lazy-loaded');
                     observer.unobserve(img);
-                }, 500); // تأخير 1 ثانية
+                }, 100); // تأخير 1 ثانية
             }
         });
     });
